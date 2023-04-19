@@ -1,0 +1,11 @@
+@startuml 演習2-5
+actor "田中さん" as tanaka
+actor "鈴木さん" as suzuki
+usecase "注文商品確認" as check_order
+usecase "商品出荷登録" as register_shipment
+rectangle "販売管理システム" {
+  tanaka --> check_order
+  suzuki --> register_shipment
+}
+check_order --> register_shipment
+@enduml

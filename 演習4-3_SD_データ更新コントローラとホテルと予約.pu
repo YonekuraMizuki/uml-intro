@@ -1,0 +1,9 @@
+@startuml 演習4-3
+object controller
+object hotel
+object reservation
+
+controller -> hotel: call reservation operation
+hotel -> hotel: create reservation object
+hotel -> reservation: register reservation operation
+@enduml

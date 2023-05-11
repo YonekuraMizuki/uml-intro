@@ -1,0 +1,7 @@
+@startuml 演習4-2
+object user
+object reservationScreen
+
+user -> reservationScreen: login (asynchronous)
+reservationScreen -> reservationScreen: authenticate (synchronous)
+@enduml

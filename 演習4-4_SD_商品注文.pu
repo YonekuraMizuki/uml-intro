@@ -1,0 +1,10 @@
+@startuml 演習4-4
+actor orderTaker
+boundary orderRegistration
+entity product
+
+orderTaker -> orderRegistration: confirm product information
+orderRegistration -> orderRegistration: display product information (recursive call)
+orderRegistration -> product: get product information
+orderRegistration -> orderRegistration: register order information (create order object)
+@enduml

@@ -1,0 +1,10 @@
+@startuml 演習4-5
+actor member
+boundary searchPage
+entity product
+
+member -> searchPage: enter search criteria
+searchPage -> product: search by category
+product -> searchPage: return search results
+searchPage -> searchPage: display search results
+@enduml

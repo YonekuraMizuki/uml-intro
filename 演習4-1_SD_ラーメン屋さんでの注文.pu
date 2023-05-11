@@ -1,0 +1,11 @@
+@startuml 演習4-1
+actor Customer
+participant "Ordering System" as OS
+participant "Kitchen Staff" as KS
+participant "Waiter" as W
+
+Customer -> OS: Places an order
+OS -> KS: Sends order to kitchen
+KS -> W: Prepares the order
+W -> Customer: Serves the order
+@enduml

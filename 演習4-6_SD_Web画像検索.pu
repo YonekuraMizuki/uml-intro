@@ -3,7 +3,6 @@ actor User
 boundary Browser
 control "Web Server" as WebServer
 database "Image Server" as ImageServer
-
 User -> Browser: Click link to view image
 Browser -> WebServer: Request image with file name
 WebServer -> ImageServer: Search for image file

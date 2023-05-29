@@ -1,0 +1,15 @@
+@startuml 演習2-8
+left to right direction
+
+actor 客
+actor ベンダー
+
+rectangle 自動販売機 {
+  客 --> (料金を入れる) 
+  客 --> (ボタンを押す)
+  客 --> (ジュースを取り出す)
+
+  (料金を入れる) --> ベンダー
+  (ジュースを取り出す) --> ベンダー
+}
+@enduml

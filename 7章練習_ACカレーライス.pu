@@ -11,10 +11,15 @@ start
  
 :野菜を洗う;
 
-fork
-:水の分量を測って鍋で湯を沸かす;
-fork again
 :材料を切る;
+
+fork
+:材料を炒める;
+note right
+肉から炒める
+endnote
+fork again
+:分量を測って鍋に水を入れる;
 end fork
 
 :沸騰したら鍋に材料を入れて煮込む;

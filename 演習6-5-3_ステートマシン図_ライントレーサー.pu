@@ -1,0 +1,11 @@
+@startuml 演習6-5-3
+state 電源swON {
+右旋回 -right-> 左旋回 :ラインを外れる（明るい）
+左旋回 -right-> 右旋回 :ライン上にある（暗い）
+
+}
+
+電源swOFF -right-> 電源swON :スイッチを入れる
+電源swOFF <-- 電源swON :スイッチを切る
+
+@enduml
